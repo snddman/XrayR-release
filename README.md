@@ -12,7 +12,7 @@ Find the source code here: [XrayR-project/XrayR](https://github.com/XrayR-projec
 # 一键安装
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/snddman/XrayR-release/main/install.sh)
 ```
 # Docker 安装
 
@@ -21,7 +21,7 @@ docker pull ghcr.io/xrayr-project/xrayr:latest && docker run --restart=always --
 ```
 
 # Docker compose 安装
-0. 安装docker-compose: 
+0. 安装docker-compose:
 ```
 curl -fsSL https://get.docker.com | bash -s docker
 curl -L "https://github.com/docker/compose/releases/download/1.26.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
@@ -34,7 +34,7 @@ chmod +x /usr/local/bin/docker-compose
 4. 启动docker：`docker-compose up -d`
 ```
 Log:
-  Level: none # Log level: none, error, warning, info, debug 
+  Level: none # Log level: none, error, warning, info, debug
   AccessPath: # /etc/XrayR/access.Log
   ErrorPath: # /etc/XrayR/error.log
 DnsConfigPath: # /etc/XrayR/dns.json Path to dns config
@@ -43,7 +43,7 @@ ConnetionConfig:
   ConnIdle: 10 # Connection idle time limit, Second
   UplinkOnly: 2 # Time limit when the connection downstream is closed, Second
   DownlinkOnly: 4 # Time limit when the connection is closed after the uplink is closed, Second
-  BufferSize: 64 # The internal cache size of each connection, kB 
+  BufferSize: 64 # The internal cache size of each connection, kB
 Nodes:
   -
     PanelType: "SSpanel" # Panel type: SSpanel, V2board, PMpanel
